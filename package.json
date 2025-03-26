@@ -1,72 +1,63 @@
 {
-	"name": "moxer-theme",
-	"displayName": "Moxer Theme",
-	"publisher": "Equinusocio",
-	"description": "From the Material Theme authors...Moxer is here to brings your DX to another level.",
-	"version": "1.11.0",
-	"license": "Apache-2.0",
-	"author": "Mattia Astorino [@equinusocio]",
-	"icon": "logo.png",
-	"galleryBanner": {
-		"color": "#090A0F",
-		"theme": "dark"
-	},
-	"homepage": "https://github.com/moxer-theme/moxer-code",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/moxer-theme/moxer-code.git"
-	},
-	"bugs": {
-		"url": "https://github.com/moxer-theme/moxer-code/issues"
-	},
-	"extensionPack": [
-		"equinusocio.moxer-icons"
-	],
-	"scripts": {
-		"lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
-		"precommit": "yarn lint",
-		"prestart": "tsc src/index.ts",
-		"start": "node src/index.js"
-	},
-	"engines": {
-		"vscode": "^1.36.0"
-	},
-	"categories": [
-		"Themes",
-		"Other"
-	],
-	"keywords": [
-		"VSCode",
-		"Themes",
-		"moxer",
-		"theme",
-		"equinusocio"
-	],
-	"extensionKind": "ui",
-	"contributes": {
-		"themes": [
-			{
-				"label": "Moxer",
-				"uiTheme": "vs-dark",
-				"path": "./build/Moxer.json"
-			},
-			{
-				"label": "Moxer Borderline",
-				"uiTheme": "vs-dark",
-				"path": "./build/Moxer-Borderline.json"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/node": "^7.0.10",
-		"eslint": "6.0.1",
-		"tslint": "5.18.0",
-		"tslint-config-prettier": "1.18.0",
-		"typescript": "^2.2.1"
-	},
-	"dependencies": {
-		"fs-extra": "8.1.0",
-		"prettier": "1.18.2",
-		"vscode-theme-generator": "git+https://git@github.com/moxer-theme/vscode-theme-generator.git"
-	}
+    "name": "moxer-contrast-theme",
+    "displayName": "Moxer Contrast Theme",
+    "publisher": "pit00",
+    "description": "Fork with better UI contrast",
+    "version": "1.0.0",
+    "icon": "logo.png",
+    "galleryBanner": {
+        "color": "#090A0F",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pit00/vscode-moxer-contrast-theme"
+    },
+    "extensionPack": [
+        "pit00.vscode-ristretto-icons"
+    ],
+    "scripts": {
+        "lint": "tslint --fix -c tslint.json 'src/**/*.ts'",
+        "precommit": "yarn lint",
+        "prestart": "tsc src/index.ts",
+        "start": "node src/index.js"
+    },
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "themes",
+        "moxer",
+        "theme"
+    ],
+    "extensionKind": ["ui"],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Moxer",
+                "uiTheme": "vs-dark",
+                "path": "./build/Moxer.json"
+            },
+            {
+                "label": "Moxer Contrast",
+                "uiTheme": "vs-dark",
+                "path": "./src/Moxer-Contast.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^7.0.10",
+        "eslint": "6.0.1",
+        "tslint": "5.18.0",
+        "tslint-config-prettier": "1.18.0",
+        "typescript": "^2.2.1"
+    },
+    "dependencies": {
+        "fs-extra": "8.1.0",
+        "prettier": "1.18.2",
+        "vscode-theme-generator": "git+https://git@github.com/moxer-theme/vscode-theme-generator.git"
+    }
 }
